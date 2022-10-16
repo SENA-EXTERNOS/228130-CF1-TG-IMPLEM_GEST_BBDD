@@ -34,8 +34,8 @@
       | , y a determinados procedimientos almacenados del sistema que ejecutan operaciones de tipo DDL. (González, E. 2015). Definir 
 
     .row.justify-content-center.mb-5
-      .col-lg-9.position-relative
-        h3.mb-4.text-center.txt--purpura Elementos determinantes para el análisis - CAC 
+      .col-lg-12.position-relative
+        h3.mb-4.text-center.txt--purpura 
         .avatar
           figure
             img(src="@/assets/curso/temas/t2/f5.svg", alt="alt").img200
@@ -80,7 +80,7 @@
         h5 Tabla 5. 
         br
         em Creación, modificación y borrado de tablas
-      .tabla-a.color-acento-botones.mb-5
+      .tabla-a.color-primario.mb-5
         table
           caption Fuente: el autor
           thead
@@ -192,7 +192,7 @@
           figure
             img(src='@/assets/curso/temas/t2/f7.svg', alt='Texto que describa la imagen')
 
-        .tarjeta.color-acento-botones.p-3(x="20%" y="20%" numero="1")
+        .tarjeta.color-acento-contenido.p-3(x="20%" y="20%" numero="1")
           .h5.mb-2 DDL
           p Es lo primero que se debe hacer cuando estamos frente a un sistema gestor de bases de datos, vamos a registrar la creación de bases de datos definiendo el lenguaje de definición de datos (
             em Data Definition Language, DDL
@@ -208,7 +208,7 @@
             | y para modificar algún componente del objeto ya creado utilizamos la sintaxis 
             em ALTER, ALTER TABLE, ALTER INDEX, 
             | etc.
-        .tarjeta.color-acento-botones.p-3(x="80%" y="20%" numero="1")
+        .tarjeta.color-acento-contenido.p-3(x="80%" y="20%" numero="2")
           .h5.mb-2 DML
           p Lenguaje para describir los datos y sus relaciones en una base de datos los cuales permiten dentro de sus funcionalidades la creación, modificación y borrado de tablas. 
           p Se ejecutan cuando un usuario intenta modificar datos mediante un evento de lenguaje de manipulación de datos (DML). Los eventos DML son instrucciones 
@@ -217,7 +217,7 @@
             em DELETE de una tabla o vista. (González, E. 2015)
 
       .fcab.p-4
-        .fblanco.border2.p-3
+        .fblanco.borde2.p-3
           p.mb-0 Tenga en cuenta que el componente formativo dispone de más recursos que se ubican en este, para ello diríjase al menú principal en donde encontrará entre otros, la síntesis, una actividad didáctica, material complementario. 
 
 </template>

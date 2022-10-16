@@ -2,23 +2,67 @@
   
 .banner-principal-decorativo
   &-1
+    width: 30%
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 30%
+    right: 70%
   &-2
+    width: 30%
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
+    top: 65%
     right: 30%
 
 
 @keyframes float1
   0%
-    transform: translateY(20px)
+    transform: scale(0.8)
 
   100%
-    transform: translateY(0px)
+    transform: scale(1.2)
+
+// Colores
+
+code
+  color: $color-sistema-texto
+
+table, .fblanco
+  background-color: white
+
+.fgrise8
+  background-color: #e8e8e8
+  &:hover
+    background-color: $color-primario
+    p
+      color: white
+
+.tarjeta--gris.acordion__activo
+  background-color: #e8e8e8 !important
+
+.fcp, .acordion__accion__btn--a
+  background-color: $color-primario !important
+  color: white
+    
+.fcab
+  background-color: $color-acento-botones !important
+
+.cac
+  color: $color-acento-contenido !important
+
+.fcab35, .bloque-texto-a.color-acento-botones
+  background-color: rgba(0,222,252,.35) !important
+
+.bloque-texto-a.color-acento-botones
+  &::before
+    background-color: rgba(232,232,232,.95) !important
+
+.bloque-texto-g.color-secundario
+  background-color: rgba(185,221,252,.35) !important
+
+.tabla-a.color-primario 
+  thead
+    background-color: #B9DDFC !important
 
 //varios
 
@@ -28,4 +72,29 @@
     background-size: cover
     background-position: center center
 
+.borde2
+  position: relative
+  &::before
+    content: ''
+    width: calc( 100% + 1.5rem )
+    height: calc( 100% + 1.5rem )
+    position: absolute
+    top: -0.75rem
+    left: -0.75rem
+    display: block
+    border: dashed $color-primario
 
+.bloque-texto-a__texto.p-4, .bloque-texto-g__texto.p-4, .border1
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    width: calc( 100% + 2rem )
+    height: calc( 100% + 2rem )
+    border: dashed $color-primario
+    top: -1rem
+    left: -1rem
+
+.grbg1
+  background-image: url('../assets/curso/temas/grbg1.svg') !important
+  background-size: cover

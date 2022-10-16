@@ -122,32 +122,111 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Creación de Bases de datos en mysql, consola',
+      referencia:
+        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60. [Video]. YouTube. Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas. [Video]. YouTube. Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. E_ISB,  9786075501598 Editorial, Grupo Editorial Patria.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=L2p3xOKUQW0',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Creación Bases de datos MongoDb',
+      referencia:
+        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60. [Video]. YouTube. Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas. [Video]. YouTube. Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. E_ISB,  9786075501598 Editorial, Grupo Editorial Patria.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=8gbDA7kH5zg',
+    },
+    {
+      tema: 'Lenguaje Estructurado de Consultas SQL',
+      referencia:
+        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60. [Video]. YouTube. Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas. [Video]. YouTube. Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. E_ISB,  9786075501598 Editorial, Grupo Editorial Patria.',
+      tipo: 'Libro ',
+      link:
+        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/121283',
     },
   ],
   glosario: [
     {
-      termino: '',
-      significado: '',
+      termino: 'Base datos',
+      significado:
+        'conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.',
     },
     {
-      termino: '<em></em>',
-      significado: '',
+      termino: 'Concurrencia',
+      significado: 'cantidad de información registrada por segundo en un SGDB.',
+    },
+    {
+      termino: 'Colección',
+      significado:
+        'es un compendio de documentos que comparten una relación de estructura similar, no necesariamente igual para todos los objetos.',
+    },
+    { termino: 'DDL', significado: 'lenguaje de definición de datos.' },
+    {
+      termino: '<em>Daemon_memcached</em>',
+      significado:
+        'almacena y recupera automáticamente datos de las tablas, convirtiendo el servidor MySQL en un rápido “almacén de clave-valor”.',
+    },
+    {
+      termino: 'Documento',
+      significado:
+        'en bases de datos no relacionales, un documento es un objeto en formato JSON que es almacenado en binario en el motor NoSQL (BSON).',
+    },
+    { termino: 'DML', significado: 'lenguaje de Manipulación de datos.' },
+    {
+      termino: 'Metadatos',
+      significado:
+        'conjunto unitario de instrucciones que permite a una computadora realizar funciones diversas, como el tratamiento de textos, el diseño de gráficos, la resolución de problemas matemáticos, el manejo de bancos de datos.',
+    },
+    { termino: 'Mongodb', significado: 'Gestor de Bases de Datos NoSQL.' },
+    { termino: 'MySQL', significado: 'Gestor de Bases de Datos SQL' },
+    {
+      termino: 'NoSQL',
+      significado:
+        'considerado como un paradigma para la administración de bases de datos que se adapta a una amplia variedad de modelos de datos, formatos de valor clave, documento, columnas y gráficos.',
+    },
+    {
+      termino: 'SQL',
+      significado:
+        'lenguaje de consulta estructurado, contiene relaciones entre tablas las cuales contienen registros.',
     },
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Arduino, G., & Alfonzo, P. L. (2018). <em>Técnicas de control de concurrencia en base de datos: implementación en un sistema de gestión</em>. In XXIV Congreso Argentino de Ciencias de la Computación.',
+      link: 'http://sedici.unlp.edu.ar/handle/10915/73561',
+    },
+    {
+      referencia:
+        'Escobar, O., Núñez, J & Pulido, E. (2019). <em>Base de datos</em>. Editorial Patria.',
+      link:
+        'https://elibro-net.bdigital.sena.edu.co/es/ereader/senavirtual/121283?page=214',
+    },
+    {
+      referencia:
+        'González, E. (2015). <em>Salvaguarda y seguridad de los datos: administración de bases de datos (UF1473)</em>. IC Editorial.',
+      link:
+        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/44140',
+    },
+    {
+      referencia:
+        'Marqués, M. (2009). <em>Bases de datos</em>. D - Universitat Jaume I. Servei de Comunicació i Publicacions.',
+      link:
+        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/51645',
+    },
+    {
+      referencia: 'Mongodb. (2022). MongoDB, Inc.',
+      link: 'https://www.mongodb.com/docs/v5.0/security/',
+    },
+    {
+      referencia:
+        'Mysql. (2022). <em>Administración de Bases de datos Mysql</em>.',
+      link: 'https://dev.mysql.com/doc/refman/8.0/en/user-names.html',
+    },
+    {
+      referencia:
+        'Sarasa, A. (2020). <em>Introducción a las bases de datos NoSQL usando MongoDB</em>. Editorial UOC.',
+      link:
+        'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/58524?fs_q=mongodb&prev=fs    ',
     },
   ],
   creditos: {

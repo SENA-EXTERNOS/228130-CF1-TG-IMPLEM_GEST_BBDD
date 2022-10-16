@@ -9,10 +9,10 @@
 
     p Las bases de datos son un sistema de información importante para las organizaciones, ya que provee el almacenamiento de registros organizados de manera digital; desde las grandes aplicaciones multiusuario hasta los teléfonos móviles y agendas electrónicas utilizan bases de datos como un elemento fundamental en el desarrollo comercial; es decir, con los datos se pueden realizar ventas, compras o suministrar información de un lugar. 
 
-    .bloque-texto-a.color-secundario.p-4.p-md-5.mb-5
+    .bloque-texto-a.color-acento-botones.p-4.p-md-5.mb-5
       .row.m-0.align-items-center.justify-content-between
         .col-lg-8
-          .bloque-texto-a__texto.p-4
+          .bloque-texto-a__texto.p-4.border
             p Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
             p.mb-0 Los servicios permiten que una BD sea de alta calidad, con información actualizada, capaz de ofrecer datos que permitan el análisis y el comercio entre los usuarios.
         .col-lg-4.mb-4.mb-lg-0(data-aos="zoom-in")
@@ -40,14 +40,13 @@
     p Al hablar de control de concurrencia en las aplicaciones, primordialmente sobre el inicio y el fin de las transacciones de datos que se pueden ejecutar al mismo tiempo se evitan bloqueos que se pudieran dar durante su ejecución. El acceso compartido de los datos que realizan estas transacciones simultaneas puede dar como resultado información inconsistente, generando incoherencias en estos datos o simplemente causando la pérdida de los mismos, siendo en parte aleatorio el resultado que se puede dar en el proceso de las lecturas y escrituras simultáneas. Esta situación ha llevado a diseñar e implementar diferentes estrategias de control de concurrencia de datos, que se encargan de evitar los problemas descritos, de modo que estos procesos de control se hacen transparentes para los desarrolladores de las aplicaciones en el momento de escribir su código.
     p Veamos este ejemplo de una compra si tenemos una estructura de tablas relacional que incluye la siguiente forma:
 
-    .col-md-8.mx-auto.mb-5
+    .col-md-9.mx-auto.mb-5
       .titulo-sexto.color-acento-contenido(data-aos='fade-right')
         h5 Tabla 1.
         br
         em Ejemplo de compra bases de datos relacionales
       .tabla-a.color-acento-contenido.mb-5
         table
-          caption Leyenda de la tabla
           thead
             tr
               th Tabla
@@ -65,7 +64,7 @@
     .col-lg-10.mx-auto.mb-5
       .row.justify-content-center.mb-5
         .col-lg-6
-          .tarjeta--boton.color-primario.p-4
+          .tarjeta--boton.fgrise8.p-4
             .row.justify-content-center.mb-3
               .col-6
                 figure
@@ -78,12 +77,12 @@
               em UPDATE 
               | hagan la lectura; por ejemplo, de una acción de 10 segundos y después las escrituras, decrementan ese dato, quedando el resultado en 9 segundos, mientras que lo correcto era un resultado de 8 segundos.
         .col-lg-6
-          .tarjeta--boton.color-primario.p-4
+          .tarjeta--boton.fgrise8.p-4
             .row.justify-content-center.mb-3
               .col-6
                 figure
                 img.riddle(:src="rid2" @mouseover="rid2 = f3inv" @mouseleave="rid2 = f3" , alt='signos de interrogación')
-            p.text-small Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un  
+            p.text-small.text-center Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un  
               em UPDATE 
               | al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del 
               em UPDATE 
@@ -221,7 +220,7 @@
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-8
-        .fcab-p-4
+        .fcab.p-4
           .fblanco.borde2.p-3
             h4 Bloqueos binarios
             p La primera forma de bloquear es utilizar bloqueos binarios. En un bloqueo binario, cada transacción debe solicitar el bloqueo de cada parte de datos A que vaya a utilizar antes de ingresar a él, sea para leerlo o escribirlo, a través de una operación bloquear(A). Deberá redimir todos los bloqueos, mediante una operación desbloquear(A) de modo que otros procesos puedan tomarlos.
@@ -320,9 +319,9 @@
       .col-lg-11.col-sm-10
         p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la confidencialidad, la integridad y la disponibilidad de los registro o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible en gran parte, concerniente a la seguridad de datos.
 
-    .bloque-texto-a.color-secundario.p-4.p-md-5.mb-5.bg-1
+    .bloque-texto-a.color-acento-botones.p-4.p-md-5.mb-5.bg-1
       .row.m-0.align-items-center.justify-content-between
-        .col-lg-8.border1
+        .col-lg-8
           .bloque-texto-a__texto.p-4
             p La seguridad de las bases de datos se enfoca en los siguientes ítems:
             ul.lista-ul--color
@@ -345,7 +344,7 @@
                 | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
         .col-lg-4.mb-4.mb-lg-0
     
-    p Para las organizaciones la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina regla de Anderson.
+    p.mb-5 Para las organizaciones la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina regla de Anderson.
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -358,7 +357,7 @@
         figure
           img(src='@/assets/curso/temas/t1/f10.svg', alt='imagen relacionada')
       .col-lg-8
-        AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+        AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
           div(titulo="Seguridad física")
             p Cuando el servidor de bases de datos es local o en un centro de datos en la nube es imprescindible que este dentro de un entorno seguro y con control de clima, es decir, que este en un cuarto con acceso restringido al público y su temperatura este entre 17 °C o 21 °C. Por otra parte, si el servidor de bases de datos está en un centro de datos de nube, el proveedor será el encargado de ello.
           div(titulo="Controles de acceso administrativo y de red")
@@ -395,7 +394,7 @@
         iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
     .col-lg-10.mx-auto
-      .tarjeta.color-primario.p-4.mb-5
+      .tarjeta.color-primario.grbg1.p-4.mb-5
         .row.justify-content-around.align-items-center
           .col-3.col-sm-2.col-lg-1
             img(src="@/assets/curso/temas/t1/f11.svg")
@@ -426,7 +425,7 @@
         figure 
           img(src='@/assets/curso/temas/t1/f12.svg', alt='imagen relacionada')
       .col-lg-8
-        AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
+        AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
           div(titulo="<em>updateUser</em>")
             p El usuario puede cambiar la informaci&oacute;n personalizada de cualquier usuario en la base de datos dada. Aplique esta acci&oacute;n a los recursos de la base de datos; 
             code {
