@@ -1,17 +1,20 @@
+import titulo from './titulo'
+
 export default {
   global: {
-    componenteFormativo: 'NOMBRE DEL COMPONENTE FORMATIVO',
-    descripcionCurso: 'BREVE DESCRIPCIÓN',
-    imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
-    fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
+    componenteFormativo: titulo,
+    descripcionCurso:
+      'La administración de bases de datos es el arte de dirigir los datos digitales afianzando su seguridad y su validez, trabajando sobre las formas de reorganizar las mismas para propender su rapidez en los procesos de búsqueda; adicionalmente, gestionan respaldos y las consultas de elementos importantes para el desarrollo analítico de datos y la toma de decisiones.',
+    imagenBannerPrincipal: require('@/assets/curso/portada/banner-img.svg'),
+    fondoBannerPrincipal: require('@/assets/curso/portada/banner-bg.svg'),
     imagenesDecorativasBanner: [
       {
         clases: ['banner-principal-decorativo-1', 'd-none', 'd-lg-block'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-1.svg'),
+        imagen: require('@/assets/curso/portada/decorativo1.svg'),
       },
       {
         clases: ['banner-principal-decorativo-2'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
+        imagen: require('@/assets/curso/portada/decorativo2.svg'),
       },
     ],
   },
@@ -32,31 +35,49 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Servicios de BD',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
+            titulo: 'Protocolos para la gestión de concurrencia',
             hash: 't_1_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.2',
+            titulo: 'Seguridad de BD SQL y NOSQL',
+            hash: 't_1_2',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '1.3',
+            titulo: 'Permisos y roles de BD',
+            hash: 't_1_3',
           },
         ],
       },
-
       {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Lenguajes de manipulación y definición de datos',
         desarrolloContenidos: true,
-      },
-      {
-        nombreRuta: 'tema3',
-        icono: 'far fa-file-alt',
-        numero: '3',
-        titulo: 'Titulo de primer nivel',
-        desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.1',
+            titulo: 'Lenguaje de manipulación de datos DML',
+            hash: 't_2_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '2.2',
+            titulo: 'Lenguaje de definición de datos DDL',
+            hash: 't_2_2',
+          },
+        ],
       },
     ],
     subMenu: [
