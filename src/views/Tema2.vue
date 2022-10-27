@@ -12,7 +12,11 @@
         figure
           img(src='@/assets/curso/temas/t2/f1.svg', alt='imagen relacionada')
       .col-lg-10
-        p Dentro de la administración de los registros o documentos de una base de datos necesitamos ciertas acciones que permiten procesar la información para mejorar la misma, para ello, tenemos el Lenguaje de Manipulación de Datos (DML), que son procedimientos proporcionados por los sistemas gestores de bases de datos que permite a los usuarios llevar a cabo ciertas tareas, como consulta y modificación; y Lenguaje de definición de Datos (DDL) que es un lenguaje para describir los datos y sus relaciones en una base de datos, los cuales permiten dentro de sus funcionalidades, la creación, modificación y borrado de tablas.
+        p Dentro de la administración de los registros o documentos de una base de datos necesitamos ciertas acciones que permiten procesar la información para mejorar la misma, para ello, tenemos el 
+          b Lenguaje de Manipulación de Datos (DML)
+          | , que son procedimientos proporcionados por los sistemas gestores de bases de datos que permite a los usuarios llevar a cabo ciertas tareas, como consulta y modificación; y 
+          b Lenguaje de definición de Datos (DDL) 
+          | que es un lenguaje para describir los datos y sus relaciones en una base de datos, los cuales permiten dentro de sus funcionalidades, la creación, modificación y borrado de tablas.
         .cajon.color-acento-contenido.p-4
           p.mb-0 
             b DML: 
@@ -193,7 +197,6 @@
             img(src='@/assets/curso/temas/t2/f7.svg', alt='Texto que describa la imagen')
 
         .tarjeta.color-acento-contenido.p-3(x="20%" y="20%" numero="1")
-          .h5.mb-2 DDL
           p Es lo primero que se debe hacer cuando estamos frente a un sistema gestor de bases de datos, vamos a registrar la creación de bases de datos definiendo el lenguaje de definición de datos (
             em Data Definition Language, DDL
             | ). Incluye tanto la creación inicial de los diferentes objetos que formarán la base de datos, como el mantenimiento de esa estructura o tablas.
@@ -209,7 +212,6 @@
             em ALTER, ALTER TABLE, ALTER INDEX, 
             | etc.
         .tarjeta.color-acento-contenido.p-3(x="80%" y="20%" numero="2")
-          .h5.mb-2 DML
           p Lenguaje para describir los datos y sus relaciones en una base de datos los cuales permiten dentro de sus funcionalidades la creación, modificación y borrado de tablas. 
           p Se ejecutan cuando un usuario intenta modificar datos mediante un evento de lenguaje de manipulación de datos (DML). Los eventos DML son instrucciones 
             em INSERT, UPDATE 

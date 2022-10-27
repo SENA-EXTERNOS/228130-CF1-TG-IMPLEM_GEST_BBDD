@@ -13,9 +13,9 @@
       .row.m-0.align-items-center.justify-content-between
         .col-lg-8
           .bloque-texto-a__texto.p-4.border
-            p Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
-            p.mb-0 Los servicios permiten que una BD sea de alta calidad, con información actualizada, capaz de ofrecer datos que permitan el análisis y el comercio entre los usuarios.
-        .col-lg-4.mb-4.mb-lg-0(data-aos="zoom-in")
+            p.text-small Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
+            p.text-small.mb-0 Los servicios permiten que una BD sea de alta calidad, con información actualizada, capaz de ofrecer datos que permitan el análisis y el comercio entre los usuarios.
+        .col-lg-3.mb-4.mb-lg-0(data-aos="zoom-in")
           img(src='@/assets/curso/temas/t1/f1.svg', alt='persona frente a un ordenador')
 
     Separador
@@ -54,9 +54,9 @@
           tbody
             tr
               td PEDIDO
-              td PRODUCTO
-            tr
               td id, num-cliente, id-produc, cantidad, valor
+            tr
+              td PRODUCTO
               td id-produc, nombre-produc, ..., stock
 
     p Cuando se registre un proceso en la BD, pueden ocurrir diferentes problemas relacionados con la escritura simultánea o lecturas, incluyendo los siguientes:
@@ -241,8 +241,8 @@
       .col-lg-6
         .fcab.p-4
           .fblanco.borde2.p-3
-            h4 Bloqueos binarios
-            p.mb-0 La primera forma de bloquear es utilizar bloqueos binarios. En un bloqueo binario, cada transacción debe solicitar el bloqueo de cada parte de datos A que vaya a utilizar antes de ingresar a él, sea para leerlo o escribirlo, a través de una operación bloquear(A). Deberá redimir todos los bloqueos, mediante una operación desbloquear(A) de modo que otros procesos puedan tomarlos.
+            h4 Bloqueos de lectura/escritura
+            p.mb-0 Es un método utilizado en los SGBD para restringir el proceso de las tablas que sean definidas en ciertos momentos todo dependerá de la alta concurrencia que exista; para el caso, podemos ver el siguiente código.
 
     Separador
 
@@ -317,7 +317,13 @@
       .col-lg-1.col-sm-2
         img(src='@/assets/curso/temas/t1/f8.svg', alt='icono de base de datos')
       .col-lg-11.col-sm-10
-        p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la confidencialidad, la integridad y la disponibilidad de los registro o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible en gran parte, concerniente a la seguridad de datos.
+        p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la 
+          b confidencialidad
+          | , la 
+          b integridad 
+          | y la 
+          b disponibilidad 
+          | de los registro o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible en gran parte, concerniente a la seguridad de datos.
 
     .bloque-texto-a.color-acento-botones.p-4.p-md-5.mb-5.bg-1
       .row.m-0.align-items-center.justify-content-between
@@ -344,7 +350,8 @@
                 | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
         .col-lg-4.mb-4.mb-lg-0
     
-    p.mb-5 Para las organizaciones la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina regla de Anderson.
+    p.mb-5 Para las organizaciones la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina 
+      b regla de Anderson.
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -618,7 +625,7 @@
                 | crear usuario
               li
                 i.fas.fa-check
-                | actualizar Usuario
+                | actualizar usuario
 
           div(titulo="<em>viewRole</em>")
             p El usuario puede ver informaci&oacute;n sobre cualquier rol en la base de datos dada. Aplique esta acci&oacute;n a los recursos de la base de datos.
@@ -637,7 +644,7 @@
               | )
  
           div(titulo="<em>viewUser</em>")
-            p El usuario puede ver la información de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos indicamos el siguiente comando en la consola;
+            p El usuario puede ver la información de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos indicamos el siguiente comando en la consola:
             ul.lista-ul--color
               li
                 i.fas.fa-check
