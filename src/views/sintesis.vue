@@ -8,6 +8,8 @@
         b Figura 2.
         br 
         em Administración de BBDD
+        
+    p A través del siguiente esquema, podrá ver resumida la información tratada en este componente formativo:
     
     .row.justify-content-center
       .col-lg-10.mb-5
