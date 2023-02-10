@@ -81,7 +81,7 @@
 
     .col-md-10.mx-auto.mb-5
       .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-        h5 Tabla 5. 
+        h5 Tabla 2 
         br
         em Creación, modificación y borrado de tablas
       .tabla-a.color-primario.mb-5
@@ -134,32 +134,14 @@
           | complemento para crear nuevas aplicaciones de escritura.
 
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6
+      .col-lg-10
         .cajon.color-acento-contenido.p-3.mb-4
-          p La Sintaxis DML de una sola fila son los tipos de declaraciones más fáciles de convertir en 
-            em memcached 
-            | operaciones. 
-            em INSERT 
-            | se vuelve 
-            em add, UPDATE 
-            | se vuelve set, 
-            em incr decr 
-            | y 
-            em DELETE 
-            | se vuelve 
-            em delete. 
-            | Podemos limitar que las operaciones solo afectarán a una fila cuando se emitan a través de la interfaz de 
-            em Memcachedkey
-            | , porque es único dentro de la tabla.
-          p.mb-0 En los siguientes ejemplos de SQL, la tabla 6 hace referencia a la tabla utilizada para las operaciones de Memcached, según la configuración de la 
-            em innodb_memcache.containerstabla. key 
-            | se refiere a la columna que se encuentra debajo 
-            em key_columnsde 
-            | valor se refiere a la columna que se encuentra debajo de 
-            em value_columns.
+          p La Sintaxis DML de una sola fila son los tipos de declaraciones más fáciles de convertir en memcached operaciones. INSERT se vuelve add, UPDATE se vuelve set, incro decr y DELETE se vuelve delete. Podemos limitar que las operaciones solo afectarán a una fila cuando se emitan a través de la interfaz de Memcachedkey, porque es único dentro de la tabla.
+      
+    .row.justify-content-center.align-items-center.mb-5
       .col-lg-6
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 6.
+          h5 Tabla 3
           br
           em Sintaxis SQL
         .tabla-a.color-primario.mb-5
@@ -188,7 +170,7 @@
       i.fas.fa-square.cac.me-2
       | Conociendo los lenguajes de manipulación y definición de datos
 
-    p Conozcamos sobre los lenguajes de manipulación y definición de datos.
+    p Entendamos los lenguajes de manipulación y definición de datos:
 
     .col-md-10.mx-auto
       ImagenInfografica.color-acento-contenido.mb-5
@@ -220,8 +202,8 @@
 
       .fcab.p-4
         .fblanco.borde2.p-3
-          p.mb-0 Tenga en cuenta que el componente formativo dispone de más recursos que se ubican en este, para ello diríjase al menú principal en donde encontrará entre otros, la síntesis, una actividad didáctica, material complementario. 
-
+          p.mb-0 Recuerde explorar los demás recursos que se encuentran disponibles en este componente formativo; para ello, diríjase al menú principal, donde encontrará la síntesis, una actividad didáctica para reforzar los conceptos estudiados, material complementario, entre otros.
+          
 </template>
 
 <script>

@@ -9,7 +9,9 @@
           i.fas.fa-info
       h1 Introducción
 
-    p Sea bienvenido a este recurso educativo, el cual está orientado a los servicios que se pueden implementar en la gestión de bases de datos como son los servicios de base de datos (protocolos, seguridad y permisos) así como los lenguajes de manipulación y definición de datos. Antes de iniciar este proceso de formación, lo invitamos a revisar el video para identificar el contexto de aprendizaje. 
+    p Apreciado aprendiz, bienvenido a este componente formativo, el cual está orientado a los servicios que se pueden implementar en la gestión de bases de datos, como son los servicios de base de datos (protocolos, seguridad y permisos) así como los lenguajes de manipulación y definición de los datos. 
+
+    p En el siguiente video conocerá, de forma general, la temática que se estudiará a lo largo del componente formativo:
 
     figure
       .video

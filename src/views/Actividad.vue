@@ -11,8 +11,9 @@
       .col-12.col-md-8.col-lg-9
         .titulo-segundo
           h2 Administración de base de datos
-        p A continuación, encontrará unos enunciados relacionados con la experiencia de aprendizaje del presente componente de formación.
-        p Con la intención de identificar conceptos abordados durante la enseñanza responda si es verdadero o falso el enunciado.
+        p A continuación, encontrará unos enunciados relacionados con la experiencia de aprendizaje del presente componente formativo.
+
+        p Con la intención de identificar conceptos abordados durante la enseñanza, responda si el enunciado es verdadero o falso.
 
         .tarjeta.actividad.p-3
           .row.justify-content-around.align-items-center            

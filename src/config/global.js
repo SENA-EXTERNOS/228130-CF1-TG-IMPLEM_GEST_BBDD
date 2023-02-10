@@ -4,7 +4,7 @@ export default {
   global: {
     componenteFormativo: titulo,
     descripcionCurso:
-      'La administración de bases de datos es el arte de dirigir los datos digitales afianzando su seguridad y su validez, trabajando sobre las formas de reorganizar las mismas para propender su rapidez en los procesos de búsqueda; adicionalmente, gestionan respaldos y las consultas de elementos importantes para el desarrollo analítico de datos y la toma de decisiones.',
+      'La administración de bases de datos es el arte de dirigir los datos digitales, afianzando su seguridad y validez, trabajando sobre las formas de reorganizar las bases, para propender su rapidez en los procesos de búsqueda; adicionalmente, se gestionan respaldos y las consultas de elementos importantes, para el desarrollo analítico de datos y la toma de decisiones.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-img.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/banner-bg.svg'),
     imagenesDecorativasBanner: [
@@ -122,24 +122,24 @@ export default {
   },
   complementario: [
     {
-      tema: 'Creación de Bases de datos en mysql, consola',
+      tema: 'Lenguajes de manipulación y definición de datos',
       referencia:
-        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60. [Video]. YouTube. Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas. [Video]. YouTube. Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. E_ISB,  9786075501598 Editorial, Grupo Editorial Patria.',
+        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60 [video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=L2p3xOKUQW0',
     },
     {
-      tema: 'Creación Bases de datos MongoDb',
+      tema: 'Lenguajes de manipulación y definición de datos',
       referencia:
-        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60. [Video]. YouTube. Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas. [Video]. YouTube. Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. E_ISB,  9786075501598 Editorial, Grupo Editorial Patria.',
+        'Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas [video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=8gbDA7kH5zg',
     },
     {
-      tema: 'Lenguaje Estructurado de Consultas SQL',
+      tema: 'Lenguajes de manipulación y definición de datos',
       referencia:
-        'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60. [Video]. YouTube. Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas. [Video]. YouTube. Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. E_ISB,  9786075501598 Editorial, Grupo Editorial Patria.',
-      tipo: 'Libro ',
+        'Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. Grupo Editorial Patria.',
+      tipo: 'Libro',
       link:
         'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/121283',
     },

@@ -13,8 +13,8 @@
       .row.m-0.align-items-center.justify-content-between
         .col-lg-8
           .bloque-texto-a__texto.p-4.border
-            p.text-small Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
-            p.text-small.mb-0 Los servicios permiten que una BD sea de alta calidad, con información actualizada, capaz de ofrecer datos que permitan el análisis y el comercio entre los usuarios.
+            p Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
+
         .col-lg-3.mb-4.mb-lg-0(data-aos="zoom-in")
           img(src='@/assets/curso/temas/t1/f1.svg', alt='persona frente a un ordenador')
 
@@ -37,7 +37,8 @@
       i.fas.fa-square.cac.me-2
       | Control de concurrencia
 
-    p Al hablar de control de concurrencia en las aplicaciones, primordialmente sobre el inicio y el fin de las transacciones de datos que se pueden ejecutar al mismo tiempo se evitan bloqueos que se pudieran dar durante su ejecución. El acceso compartido de los datos que realizan estas transacciones simultaneas puede dar como resultado información inconsistente, generando incoherencias en estos datos o simplemente causando la pérdida de los mismos, siendo en parte aleatorio el resultado que se puede dar en el proceso de las lecturas y escrituras simultáneas. Esta situación ha llevado a diseñar e implementar diferentes estrategias de control de concurrencia de datos, que se encargan de evitar los problemas descritos, de modo que estos procesos de control se hacen transparentes para los desarrolladores de las aplicaciones en el momento de escribir su código.
+    p Al hablar de control de concurrencia en las aplicaciones, primordialmente sobre el inicio y el fin de las transacciones de datos que se pueden ejecutar, al mismo tiempo, se evitan bloqueos que se pudieran dar durante su ejecución. El acceso compartido de los datos que realizan estas transacciones simultáneas, puede transferir como resultado, información inconsistente, generando incoherencias en estos datos o, simplemente, causando la pérdida de los mismos aportando, aleatoriamente, el resultado que se puede dar en el proceso de las lecturas y escrituras simultáneas. Esta situación ha llevado a diseñar e implementar diferentes estrategias de control de concurrencia de datos, las cuales se encargan de evitar los problemas descritos, de modo que estos procesos de control, se crean transparentes para los desarrolladores de las aplicaciones, en el momento de escribir su código.
+
     p Veamos este ejemplo de una compra si tenemos una estructura de tablas relacional que incluye la siguiente forma:
 
     .col-md-9.mx-auto.mb-5
@@ -63,31 +64,17 @@
 
     .col-lg-10.mx-auto.mb-5
       .row.justify-content-center.mb-5
-        .col-lg-6
-          .tarjeta--boton.fgrise8.p-4
+        .col-lg-10
+          .tarjeta--boton.p-4
             .row.justify-content-center.mb-3
-              .col-6
+              .col-3
                 figure
                   img.riddle(:src="rid1" @mouseover="rid1 = f3inv" @mouseleave="rid1 = f3" , alt='signos de interrogación')
-            p.text-small.text-center Dos sentencias 
-              em UPDATE 
-              | que actualicen un mismo producto reduciendo el proceso del mismo a una unidad, podrían terminar en que una de ellas no finalice la operación. Si pensamos en un 
-              em UPDATE 
-              | como una sucesión de una lectura y una escritura, puede que ambos 
-              em UPDATE 
-              | hagan la lectura; por ejemplo, de una acción de 10 segundos y después las escrituras, decrementan ese dato, quedando el resultado en 9 segundos, mientras que lo correcto era un resultado de 8 segundos.
-        .col-lg-6
-          .tarjeta--boton.fgrise8.p-4
-            .row.justify-content-center.mb-3
-              .col-6
-                figure
-                img.riddle(:src="rid2" @mouseover="rid2 = f3inv" @mouseleave="rid2 = f3" , alt='signos de interrogación')
-            p.text-small.text-center Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un  
-              em UPDATE 
-              | al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del 
-              em UPDATE 
-              | seguido de la comprobación, realizando quedar el proceso del producto en negativo.
+            p Dos sentencias UPDATE que actualicen un mismo producto reduciendo el proceso del mismo a una unidad, podrían terminar en que una de ellas no finalice la operación. Si pensamos en un UPDATE como una sucesión de una lectura y una escritura, puede que ambos UPDATE hagan la lectura; por ejemplo, de una acción de 10 segundos y después las escrituras, decrementan ese dato, quedando el resultado en 9 segundos, mientras que lo correcto era un resultado de 8 segundos.
 
+            p Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un UPDATE al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del UPDATE seguido de la comprobación, realizando quedar el proceso del producto en negativo.
+        
+        
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
       | Acceso concurrente a los datos
@@ -99,10 +86,6 @@
         p Se presenta cuando una segunda transacción lee datos que están siendo actualizados por una transacción antes de que haga 
           em COMMIT
           | .
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 2.
-          br
-          em Ejemplo de transacciones de datos
         .tabla-a.color-acento-contenido.mb-5.fblanco
           table
             thead
@@ -139,10 +122,6 @@
                 td 
       .tarjetacolor-acento-botones--borde.p-4(titulo="<em>Non-Repeatable Read</em> <b>(Lectura No Repetible)</b>")
         p Se presenta cuando una transacción hace la consulta al mismo dato dos veces durante una ejecución de la transacción y la segunda vez encuentra que el valor del dato ha sido modificado por otra transacción.
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 3. 
-          br
-          em Actualización de una transacción en una tabla bases de datos relacional
         .tabla-a.color-acento-contenido.mb-5.fblanco
           table
             thead
@@ -179,10 +158,6 @@
                 td 
       .tarjetacolor-acento-botones--borde.p-4(titulo="<em>Phantom Read</em> <b>(Lectura fantasma)</b>")
         p Se produce este error cuando una transacción registra dos veces una consulta, devuelve un conjunto de filas y en la segunda ejecución de la consulta registra nuevas filas en el conjunto que no existían cuando se inició la transacción.
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 4. 
-          br
-          em Inserción de transacciones en bases de datos relacionales
         .tabla-a.color-acento-contenido.mb-5.fblanco
           table
             thead
@@ -216,7 +191,7 @@
       i.fas.fa-square.cac.me-2
       | Técnicas para controlar las recurrencias, se encuentra varias técnicas para controlarlas
 
-    p Dentro de las más utilizadas están los bloqueos; sin embargo, también es utilizado el control multi-versión y las marcas de tiempo.
+    p Dentro de las técnicas más utilizadas, se encuentran los bloqueos, como también el control multiversión y las marcas de tiempo:
 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-8
@@ -357,7 +332,7 @@
       i.fas.fa-square.cac.me-2
       | Diferentes tipos de seguridad que existen en las bases de datos
 
-    p A continuación, veremos los diferentes tipos de seguridad que existen en las bases de datos.
+    p A continuación, comprenderemos los diferentes tipos de seguridad, que existen en las bases de datos:
 
     .row.justify-content-center.mb-5
       .col-lg-4
@@ -370,7 +345,8 @@
           div(titulo="Controles de acceso administrativo y de red")
             p Cuando se habla de control de acceso decimos que es la cantidad de usuarios que acceden a la base de datos. Como medida de protección de datos es aconsejable tener el mínimo de usuarios que operen la base de datos y sus permisos deben limitarse a los niveles mínimos necesarios donde podrán realizar sus trabajos. Adicionalmente, el acceso a la red debe estar limitada al nivel mínimo de permisos necesarios, esto con el fin que los usuarios no realicen acciones que no estén dentro de su trabajo.
           div(titulo="Seguridad de cuenta/dispositivo de usuario final")
-            p Se debe saber quién accede a la base de datos, en qué momento y de qué forma se utilizan los datos. La supervisión de datos puede alertar si las actividades de la gestión de los datos no son comunes o parecen arriesgadas. Todas las cuentas y dispositivos de usuario que se conectan a la red que aloja la base de datos deben ser físicamente seguros, es decir, que los usuarios sepan lo que están haciendo para no tener perdida de información o inconsistencia de registros.
+            p Se debe tener la información de quién accede a la base de datos, en qué momento y de qué forma se utiliza su contenido. Supervisar la información, puede alertar si las actividades de la gestión de los datos no son comunes, o parecen arriesgadas. Todas las cuentas y los dispositivos de usuario que se conectan con la red que aloja la base de datos, deben ser físicamente seguros, es decir, que los usuarios conozcan lo que están haciendo, para no tener pérdida de información o inconsistencia de registros.
+
           div(titulo="Cifrado")
             p Es una parte muy importante de la seguridad de datos, deben estar cifrados los datos de la base de datos y los datos de credenciales, adicionalmente, se deberán proteger con el mejor cifrado mientras no estén operando o en tránsito.
           div(titulo="Seguridad de <em>software</em> de base de datos")
@@ -378,7 +354,8 @@
               em software 
               | de gestión de bases de datos aplicando los parches cuando sean suministrados por el proveedor.
           div(titulo="Seguridad del servidor de aplicaciones/<em>web</em>")
-            p Cualquier aplicación o servidor web que interactúe con la base de datos esta susceptible a los ataques y debe estar constantemente en pruebas de seguridad acompañado de las mejores prácticas.
+            p Cualquier aplicación o servidor web que interactúen con la base de datos, están susceptibles a los ataques y deben estar supervisados de manera constante, para pruebas de seguridad, acompañadas de las mejores prácticas.
+            
           div(titulo="Seguridad de copia")
             p Para una buena gestión de la información las copias de seguridad, copias o imágenes de la base de datos deben estar sujetas a los mismos controles de seguridad, estas deben estar registradas en una bitácora de registro donde indique fecha en la que se va a registrar la copia durante el año en curso.
           div(titulo="Auditoría")
