@@ -178,7 +178,7 @@
           figure
             img(src='@/assets/curso/temas/t2/f7.svg', alt='Texto que describa la imagen')
 
-        .tarjeta.color-acento-contenido.p-3(x="20%" y="20%" numero="1")
+        .tarjeta.color-acento-contenido.p-3(x="0%" y="50%" numero="1")
           p Es lo primero que se debe hacer cuando estamos frente a un sistema gestor de bases de datos, vamos a registrar la creación de bases de datos definiendo el lenguaje de definición de datos (
             em Data Definition Language, DDL
             | ). Incluye tanto la creación inicial de los diferentes objetos que formarán la base de datos, como el mantenimiento de esa estructura o tablas.
@@ -193,7 +193,7 @@
             | y para modificar algún componente del objeto ya creado utilizamos la sintaxis 
             em ALTER, ALTER TABLE, ALTER INDEX, 
             | etc.
-        .tarjeta.color-acento-contenido.p-3(x="80%" y="20%" numero="2")
+        .tarjeta.color-acento-contenido.p-3(x="100%" y="50%" numero="2")
           p Lenguaje para describir los datos y sus relaciones en una base de datos los cuales permiten dentro de sus funcionalidades la creación, modificación y borrado de tablas. 
           p Se ejecutan cuando un usuario intenta modificar datos mediante un evento de lenguaje de manipulación de datos (DML). Los eventos DML son instrucciones 
             em INSERT, UPDATE 

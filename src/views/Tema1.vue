@@ -18,6 +18,8 @@
         .col-lg-3.mb-4.mb-lg-0(data-aos="zoom-in")
           img(src='@/assets/curso/temas/t1/f1.svg', alt='persona frente a un ordenador')
 
+    p Los servicios permiten que una BD sea de alta calidad, con información actualizada, capaz de ofrecer datos que permitan el análisis y el comercio entre los usuarios.
+
     Separador
 
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -43,7 +45,7 @@
 
     .col-md-9.mx-auto.mb-5
       .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-        h5 Tabla 1.
+        h5 Tabla 1
         br
         em Ejemplo de compra bases de datos relacionales
       .tabla-a.color-acento-contenido.mb-5
@@ -271,14 +273,14 @@
     p Veamos las definiciones al respecto de cada base de datos:
 
     .col-md-8.mx-auto.mb-5
-      ImagenInfografica.color-secundario.mb-5
+      ImagenInfografica.color-acento-contenido.mb-5
         template(v-slot:imagen)
           figure
             img(src='@/assets/curso/temas/t1/f7.svg', alt='imagen relacionada')
-        .tarjeta.color-acento-contenido.p-3(x="20%" y="20%" numero="1")
+        .tarjeta.color-acento-contenido.p-3(x="10%" y="40%" numero="1")
           .h5.mb-2 BD SQL
           p “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos. Cada base de datos ha sido diseñada para satisfacer los requisitos de información de una empresa u otro tipo de organización como, por ejemplo, una universidad o un hospital”. (Marqués, 2009).
-        .tarjeta.color-acento-contenido.p-3(x="80%" y="20%" numero="2")
+        .tarjeta.color-acento-contenido.p-3(x="73%" y="32%" numero="2")
           .h5.mb-2 BD NoSQL
           p Cuando se habla de bases de datos “NoSQL” se refiere a tipos de bases de datos no relacionales que almacenan datos de forma distinta a las tablas relacionales. Adicionalmente, las bases de datos NoSQL se pueden consultar utilizando API (Aplicación 
           em web 
@@ -367,11 +369,7 @@
       em AppServer com Mysql
       | .
 
-    p Explicación de la creación de usuarios en una base de datos SQL en servidor 
-      em AppServer com Mysql 
-      | - Explicación de la creación de usuarios en una base de datos NoSQL en 
-      em MongoDB
-      | .
+    p A continuación, veamos el video el cual explicará con detalle, la creación de usuarios en una base de datos NoSQL en MongoDB:
 
     figure.mb-5
       .video
@@ -599,10 +597,10 @@
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | crear usuario
+                | crear usuario.
               li
                 i.fas.fa-check
-                | actualizar usuario
+                | actualizar usuario.
 
           div(titulo="<em>viewRole</em>")
             p El usuario puede ver informaci&oacute;n sobre cualquier rol en la base de datos dada. Aplique esta acci&oacute;n a los recursos de la base de datos.
