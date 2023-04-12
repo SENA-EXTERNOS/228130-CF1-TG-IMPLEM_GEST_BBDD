@@ -139,7 +139,7 @@
           p La Sintaxis DML de una sola fila son los tipos de declaraciones más fáciles de convertir en memcached operaciones. INSERT se vuelve add, UPDATE se vuelve set, incro decr y DELETE se vuelve delete. Podemos limitar que las operaciones solo afectarán a una fila cuando se emitan a través de la interfaz de Memcachedkey, porque es único dentro de la tabla.
       
     .row.justify-content-center.align-items-center.mb-5
-      .col-lg-6
+      .col-lg-9
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Tabla 3
           br
@@ -200,9 +200,10 @@
             | o 
             em DELETE de una tabla o vista. (González, E. 2015)
 
-      .fcab.p-4
-        .fblanco.borde2.p-3
-          p.mb-0 Recuerde explorar los demás recursos que se encuentran disponibles en este componente formativo; para ello, diríjase al menú principal, donde encontrará la síntesis, una actividad didáctica para reforzar los conceptos estudiados, material complementario, entre otros.
+      .fcab.p-3
+        .contenedor-dashed.p-3
+          .fblanco.borde2.p-3
+            p.mb-0 Recuerde explorar los demás recursos que se encuentran disponibles en este componente formativo; para ello, diríjase al menú principal, donde encontrará la síntesis, una actividad didáctica para reforzar los conceptos estudiados, material complementario, entre otros.
           
 </template>
 

@@ -9,14 +9,15 @@
 
     p Las bases de datos son un sistema de información importante para las organizaciones, ya que provee el almacenamiento de registros organizados de manera digital; desde las grandes aplicaciones multiusuario hasta los teléfonos móviles y agendas electrónicas utilizan bases de datos como un elemento fundamental en el desarrollo comercial; es decir, con los datos se pueden realizar ventas, compras o suministrar información de un lugar. 
 
-    .bloque-texto-a.color-acento-botones.p-4.p-md-5.mb-5
+    .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5
       .row.m-0.align-items-center.justify-content-between
         .col-lg-8
-          .bloque-texto-a__texto.p-4.border
-            p Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
+          .contenedor-dashed.p-4
+            .bloque-texto-a__texto.p-4.border
+              p Los servicios que proveen las bases de datos a las empresas están dados por el funcionamiento de los Sistemas Gestores de Bases de datos (SGBD), siendo las herramientas que permiten el almacenamiento de registros o datos de manera organizada, de tal manera que se pueden hacer consultas en menor tiempo, y adicionalmente, permite compartir datos a los usuarios que los necesitan para realizar acciones, ellas pueden ser de tipo comercial, de consulta o análisis de información, facilitando el mejoramiento y la organización. Por otra parte, los SGBD permiten la edición de registros en cuanto a su actualización, la eliminación de aquello que ya no sirve como una estructura fundamental dentro de la BD y la agregación o registro de información llamado comúnmente como la alimentación de la BD.
 
         .col-lg-3.mb-4.mb-lg-0(data-aos="zoom-in")
-          img(src='@/assets/curso/temas/t1/f1.svg', alt='persona frente a un ordenador')
+            img(src='@/assets/curso/temas/t1/f1.svg', alt='persona frente a un ordenador')
 
     p Los servicios permiten que una BD sea de alta calidad, con información actualizada, capaz de ofrecer datos que permitan el análisis y el comercio entre los usuarios.
 
@@ -25,15 +26,19 @@
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.1 Protocolos para la gestión de concurrencia
 
-    .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-5.mb-5
-      .bloque-texto-g__img(
-        data-aos="fade-right",:style="{'background-image':`url(${require('@/assets/curso/temas/t1/f2.jpg')})`}"
-      )
-      .bloque-texto-g__texto.p-4
-        p.mb-0 La cantidad de transacciones de registros por minutos son muy altas, de ahí la importancia de la administración de concurrencia, permitiendo la coherencia, integridad y durabilidad de los datos que son procesados por los SGDB por esto es una tarea vital. La elección de una técnica de manejo de concurrencia que permita la serialización de las transacciones y la coherencia de las operaciones realizadas sobre dichos datos, debe ejecutarse de acuerdo a la naturaleza del problema que se esté tratando de resolver. (Arduino, & Alfonzo, 2018).
-        br
-        br
-        | Las técnicas o métodos para administrar la cantidad de transacciones de información sobre dichos datos deben ejecutarse de acuerdo a la naturaleza del problema que se está tratando de resolver, para el caso, veremos un modelo de gestión de compras y ventas, demostrando que con la aplicación de técnicas mencionadas de acuerdo con acciones que no registran un bloqueo o que el bloque resultaría costoso para la operatividad de la organización en el rendimiento del sistema; es decir, en tiempo y recurso busca como objetivo primordial mantener la integridad y coherencia de los datos.
+    .bloque-texto-g.color-secundario.p-3.p-sm-4.p-md-4.mb-5
+      .row.m-0.align-items-center.justify-content-between
+        .col-lg-3.mb-4.mb-lg-0
+          .bloque-texto-g__img(
+            data-aos="fade-right",:style="{'background-image':`url(${require('@/assets/curso/temas/t1/f2.jpg')})`}"
+          )
+        .col-lg-8
+          .contenedor-dashed.p-3
+            .bloque-texto-g1__texto.p-3
+              p.mb-0 La cantidad de transacciones de registros por minutos son muy altas, de ahí la importancia de la administración de concurrencia, permitiendo la coherencia, integridad y durabilidad de los datos que son procesados por los SGDB por esto es una tarea vital. La elección de una técnica de manejo de concurrencia que permita la serialización de las transacciones y la coherencia de las operaciones realizadas sobre dichos datos, debe ejecutarse de acuerdo a la naturaleza del problema que se esté tratando de resolver. (Arduino, & Alfonzo, 2018).
+              br
+              br
+              | Las técnicas o métodos para administrar la cantidad de transacciones de información sobre dichos datos deben ejecutarse de acuerdo a la naturaleza del problema que se está tratando de resolver, para el caso, veremos un modelo de gestión de compras y ventas, demostrando que con la aplicación de técnicas mencionadas de acuerdo con acciones que no registran un bloqueo o que el bloque resultaría costoso para la operatividad de la organización en el rendimiento del sistema; es decir, en tiempo y recurso busca como objetivo primordial mantener la integridad y coherencia de los datos.
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -198,10 +203,11 @@
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-8
         .fcab.p-4
-          .fblanco.borde2.p-3
-            h4 Bloqueos binarios
-            p La primera forma de bloquear es utilizar bloqueos binarios. En un bloqueo binario, cada transacción debe solicitar el bloqueo de cada parte de datos A que vaya a utilizar antes de ingresar a él, sea para leerlo o escribirlo, a través de una operación bloquear(A). Deberá redimir todos los bloqueos, mediante una operación desbloquear(A) de modo que otros procesos puedan tomarlos.
-            p.mb-0 Este sistema de bloqueos tiene una descripción muy simple, ya que solo necesita mantener una tabla que indica qué partes de los datos está bloqueada y por cuál transacción.
+          .contenedor-dashed.p-4
+            .fblanco.borde2.p-3
+              h4 Bloqueos binarios
+              p La primera forma de bloquear es utilizar bloqueos binarios. En un bloqueo binario, cada transacción debe solicitar el bloqueo de cada parte de datos A que vaya a utilizar antes de ingresar a él, sea para leerlo o escribirlo, a través de una operación bloquear(A). Deberá redimir todos los bloqueos, mediante una operación desbloquear(A) de modo que otros procesos puedan tomarlos.
+              p.mb-0 Este sistema de bloqueos tiene una descripción muy simple, ya que solo necesita mantener una tabla que indica qué partes de los datos está bloqueada y por cuál transacción.
       .col-lg-4
         img(src='@/assets/curso/temas/t1/f4.svg', alt='imagen alusiva a la seguridad')
 
@@ -217,9 +223,10 @@
             a(href="https://programmerclick.com", target="_blank") https://programmerclick.com 
       .col-lg-6
         .fcab.p-4
-          .fblanco.borde2.p-3
-            h4 Bloqueos de lectura/escritura
-            p.mb-0 Es un método utilizado en los SGBD para restringir el proceso de las tablas que sean definidas en ciertos momentos todo dependerá de la alta concurrencia que exista; para el caso, podemos ver el siguiente código.
+          .contenedor-dashed.p-4
+            .fblanco.borde2.p-3
+              h4 Bloqueos de lectura/escritura
+              p.mb-0 Es un método utilizado en los SGBD para restringir el proceso de las tablas que sean definidas en ciertos momentos todo dependerá de la alta concurrencia que exista; para el caso, podemos ver el siguiente código.
 
     Separador
 
@@ -302,29 +309,30 @@
           b disponibilidad 
           | de los registro o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible en gran parte, concerniente a la seguridad de datos.
 
-    .bloque-texto-a.color-acento-botones.p-4.p-md-5.mb-5.bg-1
+    .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5.bg-1
       .row.m-0.align-items-center.justify-content-between
         .col-lg-8
-          .bloque-texto-a__texto.p-4
-            p La seguridad de las bases de datos se enfoca en los siguientes ítems:
-            ul.lista-ul--color
-              li
-                i.fas.fa-check
-                | El sistema de gestión de bases de datos (SGBD).
-              li
-                i.fas.fa-check
-                | Los datos de la base de datos.
-              li
-                i.fas.fa-check
-                p.mb-0 El servidor de base de datos físico y/o el servidor de base de datos virtual y el 
-                  em hardware 
-                  | subyacente.
-              li
-                i.fas.fa-check
-                | Cualquier aplicación relacionada.
-              li
-                i.fas.fa-check
-                | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
+          .contenedor-dashed.p-4
+            .bloque-texto-a__texto.p-4
+              p La seguridad de las bases de datos se enfoca en los siguientes ítems:
+              ul.lista-ul--color
+                li
+                  i.fas.fa-check
+                  | El sistema de gestión de bases de datos (SGBD).
+                li
+                  i.fas.fa-check
+                  | Los datos de la base de datos.
+                li
+                  i.fas.fa-check
+                  p.mb-0 El servidor de base de datos físico y/o el servidor de base de datos virtual y el 
+                    em hardware 
+                    | subyacente.
+                li
+                  i.fas.fa-check
+                  | Cualquier aplicación relacionada.
+                li
+                  i.fas.fa-check
+                  | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
         .col-lg-4.mb-4.mb-lg-0
     
     p.mb-5 Para las organizaciones la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina 
