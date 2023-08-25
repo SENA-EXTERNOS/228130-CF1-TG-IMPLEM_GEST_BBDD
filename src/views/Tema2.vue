@@ -26,7 +26,7 @@
             em DELETE 
             | de una tabla o vista. (González, E. 2015)
 
-    #t_2_1titulo-segundo.color-acento-contenido(data-aos='fade-right')
+    #t_2_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.1 Lenguaje de definición de datos DDL
 
     p DDL: se ejecutan en respuesta a una variedad de eventos de lenguaje de definición de datos (DDL). Estos eventos corresponden principalmente a instrucciones 
@@ -51,7 +51,7 @@
             .col
               p.mb-0 Para empezar, lo primero que se debe hacer cuando estamos frente a un sistema gestor de bases de datos es registrar la creación de bases de datos precisando el lenguaje de definición 
                 em (Data Definition Language, DDL)
-                | ,como uno proporcionado por el sistema de gestión de base de datos que permite a los administradores de la misma, llevar a cabo las tareas de definición de las estructuras de las tablas y las relaciones que almacenan datos o registros como también el proceso que permiten consultarlos como parte fundamental para tener la base de datos.
+                | , como uno proporcionado por el sistema de gestión de base de datos que permite a los administradores de la misma, llevar a cabo las tareas de definición de las estructuras de las tablas y las relaciones que almacenan datos o registros como también el proceso que permiten consultarlos como parte fundamental para tener la base de datos.
         .crd.crd--avatarHorizontal.py-4
           .row.align-items-center.position-relative
             .col-auto
@@ -69,8 +69,8 @@
                 | registra un nuevo índice; por otra parte, podremos registrar sus eliminaciones a los objetos creados utilizando la sintaxis 
                 em DROP (DROP TABLE, DROP INDEX…)
                 |  y para modificar algún componente del objeto ya creado, utilizamos la sintaxis 
-                em ALTER, ALTER TABLE, ALTER INDEX 
-                | etc.
+                em ALTER, ALTER TABLE, ALTER INDEX, 
+                |  etc.
         .crd.crd--avatarHorizontal.crd--last.py-4
           .row.align-items-center.position-relative
             .col-auto

@@ -68,13 +68,13 @@ export default {
           {
             icono: 'far fa-file-alt',
             numero: '2.1',
-            titulo: 'Lenguaje de manipulación de datos DML',
+            titulo: 'Lenguaje de definición de datos DDL',
             hash: 't_2_1',
           },
           {
             icono: 'far fa-file-alt',
             numero: '2.2',
-            titulo: 'Lenguaje de definición de datos DDL',
+            titulo: 'Lenguaje de manipulación de datos DML',
             hash: 't_2_2',
           },
         ],

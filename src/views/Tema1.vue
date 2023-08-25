@@ -44,7 +44,7 @@
       i.fas.fa-square.cac.me-2
       | Control de concurrencia
 
-    p Al hablar de control de concurrencia en las aplicaciones, primordialmente sobre el inicio y el fin de las transacciones de datos que se pueden ejecutar, al mismo tiempo, se evitan bloqueos que se pudieran dar durante su ejecución. El acceso compartido de los datos que realizan estas transacciones simultáneas, puede transferir como resultado, información inconsistente, generando incoherencias en estos datos o, simplemente, causando la pérdida de los mismos aportando, aleatoriamente, el resultado que se puede dar en el proceso de las lecturas y escrituras simultáneas. Esta situación ha llevado a diseñar e implementar diferentes estrategias de control de concurrencia de datos, las cuales se encargan de evitar los problemas descritos, de modo que estos procesos de control, se crean transparentes para los desarrolladores de las aplicaciones, en el momento de escribir su código.
+    p Al hablar de control de concurrencia en las aplicaciones, primordialmente sobre el inicio y el fin de las transacciones de datos que se pueden ejecutar, al mismo tiempo, se evitan bloqueos que se pudieran dar durante su ejecución. El acceso compartido de los datos que realizan estas transacciones simultáneas, puede transferir, como resultado, información inconsistente, generando incoherencias en estos datos o, simplemente, causando la pérdida de los mismos, aportando, aleatoriamente, el resultado que se puede dar en el proceso de las lecturas y escrituras simultáneas. Esta situación ha llevado a diseñar e implementar diferentes estrategias de control de concurrencia de datos, las cuales se encargan de evitar los problemas descritos, de modo que estos procesos de control, se crean transparentes para los desarrolladores de las aplicaciones, en el momento de escribir su código.
 
     p Veamos este ejemplo de una compra si tenemos una estructura de tablas relacional que incluye la siguiente forma:
 
@@ -226,7 +226,7 @@
           .contenedor-dashed.p-4
             .fblanco.borde2.p-3
               h4 Bloqueos de lectura/escritura
-              p.mb-0 Es un método utilizado en los SGBD para restringir el proceso de las tablas que sean definidas en ciertos momentos todo dependerá de la alta concurrencia que exista; para el caso, podemos ver el siguiente código.
+              p.mb-0 Es un método utilizado en los SGBD para restringir el proceso de las tablas que sean definidas en ciertos momentos, todo dependerá de la alta concurrencia que exista; para el caso, podemos ver el siguiente código.
 
     Separador
 
@@ -257,7 +257,7 @@
                     em AppServ
               li
                 p.mb-0 
-                  span.text-bold a. 
+                  span.text-bold b. 
                   | Ver video de instalación: 
                   a(href='https://www.youtube.com/watch?v=L2mMMevapSk', target='_blank') https://www.youtube.com/watch?v=L2mMMevapSk
           div(numero="2" titulo="Descargar e instalar <em>mysqlworkbench</em>")
@@ -289,9 +289,7 @@
           p “Una base de datos es un conjunto de datos almacenados en memoria externa que están organizados mediante una estructura de datos. Cada base de datos ha sido diseñada para satisfacer los requisitos de información de una empresa u otro tipo de organización como, por ejemplo, una universidad o un hospital”. (Marqués, 2009).
         .tarjeta.color-acento-contenido.p-3(x="73%" y="32%" numero="2")
           .h5.mb-2 BD NoSQL
-          p Cuando se habla de bases de datos “NoSQL” se refiere a tipos de bases de datos no relacionales que almacenan datos de forma distinta a las tablas relacionales. Adicionalmente, las bases de datos NoSQL se pueden consultar utilizando API (Aplicación 
-          em web 
-          | que permite realizar búsquedas de información) de lenguaje natural, lenguajes de consulta estructurados declarativos y lenguajes de consulta mediante ejemplo, también se les llama bases de datos “no solo SQL”; es decir, que una base de datos NoSQL hace las consultas en archivos o documentos, gráficos o en Bases SQL.
+          p Cuando se habla de bases de datos “NoSQL” se refiere a tipos de bases de datos no relacionales que almacenan datos de forma distinta a las tablas relacionales. Adicionalmente, las bases de datos NoSQL se pueden consultar utilizando API (aplicación web que permite realizar búsquedas de información) de lenguaje natural, lenguajes de consulta estructurados declarativos y lenguajes de consulta mediante ejemplo, también se les llama bases de datos “no solo SQL”; es decir, que una base de datos NoSQL hace las consultas en archivos o documentos, gráficos o en Bases SQL.
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -307,7 +305,7 @@
           b integridad 
           | y la 
           b disponibilidad 
-          | de los registro o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible en gran parte, concerniente a la seguridad de datos.
+          | de los registros o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible, en gran parte, concerniente a la seguridad de datos.
 
     .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5.bg-1
       .row.m-0.align-items-center.justify-content-between
@@ -335,7 +333,7 @@
                   | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
         .col-lg-4.mb-4.mb-lg-0
     
-    p.mb-5 Para las organizaciones la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina 
+    p.mb-5 Para las organizaciones, la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina 
       b regla de Anderson.
 
     h3(data-aos="fade-right")
@@ -351,7 +349,7 @@
       .col-lg-8
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
           div(titulo="Seguridad física")
-            p Cuando el servidor de bases de datos es local o en un centro de datos en la nube es imprescindible que este dentro de un entorno seguro y con control de clima, es decir, que este en un cuarto con acceso restringido al público y su temperatura este entre 17 °C o 21 °C. Por otra parte, si el servidor de bases de datos está en un centro de datos de nube, el proveedor será el encargado de ello.
+            p Cuando el servidor de bases de datos es local o en un centro de datos en la nube, es imprescindible que esté dentro de un entorno seguro y con control de clima, es decir, que este en un cuarto con acceso restringido al público y su temperatura este entre 17 °C o 21 °C. Por otra parte, si el servidor de bases de datos está en un centro de datos de nube, el proveedor será el encargado de ello.
           div(titulo="Controles de acceso administrativo y de red")
             p Cuando se habla de control de acceso decimos que es la cantidad de usuarios que acceden a la base de datos. Como medida de protección de datos es aconsejable tener el mínimo de usuarios que operen la base de datos y sus permisos deben limitarse a los niveles mínimos necesarios donde podrán realizar sus trabajos. Adicionalmente, el acceso a la red debe estar limitada al nivel mínimo de permisos necesarios, esto con el fin que los usuarios no realicen acciones que no estén dentro de su trabajo.
           div(titulo="Seguridad de cuenta/dispositivo de usuario final")
@@ -367,9 +365,9 @@
             p Cualquier aplicación o servidor web que interactúen con la base de datos, están susceptibles a los ataques y deben estar supervisados de manera constante, para pruebas de seguridad, acompañadas de las mejores prácticas.
             
           div(titulo="Seguridad de copia")
-            p Para una buena gestión de la información las copias de seguridad, copias o imágenes de la base de datos deben estar sujetas a los mismos controles de seguridad, estas deben estar registradas en una bitácora de registro donde indique fecha en la que se va a registrar la copia durante el año en curso.
+            p Para una buena gestión de la información, las copias de seguridad, copias o imágenes de la base de datos deben estar sujetas a los mismos controles de seguridad, estas deben estar registradas en una bitácora de registro donde indique fecha en la que se va a registrar la copia durante el año en curso.
           div(titulo="Auditoría")
-            p Los formatos deben hacer parte del administrador de bases de datos, esto con el fin de registrar todos los inicios de sesión en el servidor de bases de datos y el sistema operativo también debe registrar las operaciones realizadas en datos confidenciales. Las auditorías estándar de seguridad de base de datos deben realizarse regularmente, anualmente o antes si hay registros de fugas de información.
+            p Los formatos deben hacer parte del administrador de bases de datos, esto con el fin de registrar todos los inicios de sesión en el servidor de bases de datos y el sistema operativo también debe registrar las operaciones realizadas en datos confidenciales. Las auditorías estándar de seguridad de base de datos deben realizarse regularmente, anualmente o antes, si hay registros de fugas de información.
           
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
@@ -459,7 +457,7 @@
               | }
 
           div(titulo="<em>changePassword</em>")
-            p El usuario puede cambiar la contraseña de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos ingresando el siguiente comando; ojo, recuerde que debemos estar en la bases de datos admin de mongodb para hacer este cambio; 
+            p El usuario puede cambiar la contraseña de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos ingresando el siguiente comando; ojo, recuerde que debemos estar en las bases de datos admin de mongodb para hacer este cambio; 
               em db.changeUserPassword(“admin”, passwordPrompt()) 
               | , cuando solicite el 
               em password 
@@ -605,10 +603,10 @@
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | crear usuario.
+                | Crear usuario.
               li
                 i.fas.fa-check
-                | actualizar usuario.
+                | Actualizar usuario.
 
           div(titulo="<em>viewRole</em>")
             p El usuario puede ver informaci&oacute;n sobre cualquier rol en la base de datos dada. Aplique esta acci&oacute;n a los recursos de la base de datos.
