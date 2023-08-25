@@ -62,7 +62,7 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Lenguajes de manipulación y definición de datos',
+        titulo: 'Lenguajes de definición y manipulación de datos',
         desarrolloContenidos: true,
         subMenu: [
           {
