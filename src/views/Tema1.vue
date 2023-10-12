@@ -266,7 +266,7 @@
             a(href="https://www.youtube.com/watch?v=fBogDpofRiQ", target="_blank") https://www.youtube.com/watch?v=fBogDpofRiQ
           div(numero="4" titulo="Importante")
             p Es posible que
-              em Mysqlworkbench
+              em MySQLworkbench
               | le salga que no se puede instalar porque no tiene
               em Visual C++
               | entonces instalarlo.

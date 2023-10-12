@@ -32,14 +32,14 @@
     <path id="Rectángulo_40686-2-2" data-name="Rectángulo 40686-2" d="M5,0H180a5,5,0,0,1,5,5V153a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(311.334 808.658)" fill="#b9ddfc"/>
     <path id="Rectángulo_40686-2-3" data-name="Rectángulo 40686-2" d="M5,0H210a5,5,0,0,1,5,5V153a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(535.792 808.658)" fill="#b9ddfc"/>
     <g id="Lenguaje_de_consulta_estructurado" data-name="Lenguaje de consulta estructurado" transform="translate(-3875.98 -1111.342)" style="isolation: isolate">
-      <text id="ORACLE_SQL_Mysql_MariaDB_" data-name="ORACLE
+      <text id="ORACLE_SQL_MySQL_MariaDB_" data-name="ORACLE
 
 SQL
 
-Mysql
+MySQL
 
 MariaDB
-" transform="translate(4279.815 1947.342)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto" style="isolation: isolate"><tspan x="-29.66" y="0">ORACLE</tspan><tspan x="0" y="19.2"></tspan><tspan x="-14.551" y="38.4">SQL</tspan><tspan x="0" y="57.6"></tspan><tspan x="-21.383" y="76.8">Mysql</tspan><tspan x="0" y="96"></tspan><tspan x="-30.563" y="115.2">MariaDB</tspan><tspan font-family="Roboto-Regular"><tspan x="0" y="134.4"></tspan></tspan></text>
+" transform="translate(4279.815 1947.342)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto" style="isolation: isolate"><tspan x="-29.66" y="0">ORACLE</tspan><tspan x="0" y="19.2"></tspan><tspan x="-14.551" y="38.4">SQL</tspan><tspan x="0" y="57.6"></tspan><tspan x="-21.383" y="76.8">MySQL</tspan><tspan x="0" y="96"></tspan><tspan x="-30.563" y="115.2">MariaDB</tspan><tspan font-family="Roboto-Regular"><tspan x="0" y="134.4"></tspan></tspan></text>
     </g>
     <g id="Lenguaje_de_consulta_estructurado-2" data-name="Lenguaje de consulta estructurado" transform="translate(-3875.98 -1111.342)" style="isolation: isolate">
       <text id="Conformadas_por_tablas._Relacionales_entre_tablas._Solvencia_y_consistencia_en_el_almacenamiento_y_consulta_de_datos." data-name="Conformadas por tablas.
@@ -82,7 +82,7 @@ Arquitectura distribuida.
 Eficiencia en el procesamiento
 de datos.
 
-Su almacenamiento se hace en 
+Su almacenamiento se hace en
 documentos.
 " transform="translate(4927.89 1947.342)" fill="#12263f" font-size="16" font-family="Roboto-Regular, Roboto" style="isolation: isolate"><tspan x="0" y="0">Los datos no se almacenan</tspan><tspan x="0" y="19.2">en tablas.</tspan><tspan x="0" y="38.4"></tspan><tspan x="0" y="57.6">Arquitectura distribuida.</tspan><tspan x="0" y="76.8"></tspan><tspan x="0" y="96">Eficiencia en el procesamiento</tspan><tspan x="0" y="115.2">de datos.</tspan><tspan x="0" y="134.4"></tspan><tspan x="0" y="153.6">Su almacenamiento se hace en </tspan><tspan x="0" y="172.8">documentos.</tspan><tspan font-family="Roboto-Regular"><tspan x="0" y="192"></tspan></tspan></text>
     </g>

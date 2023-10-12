@@ -219,7 +219,7 @@ export default {
     },
     {
       referencia:
-        'Mysql. (2022). <em>Administración de Bases de datos Mysql</em>.',
+        'MySQL. (2022). <em>Administración de Bases de datos MySQL</em>.',
       link: 'https://dev.mysql.com/doc/refman/8.0/en/user-names.html',
     },
     {
