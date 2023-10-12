@@ -7,7 +7,7 @@
         span 1
       h1 Servicios de BD
 
-    p Las bases de datos son un sistema de información importante para las organizaciones, ya que provee el almacenamiento de registros organizados de manera digital; desde las grandes aplicaciones multiusuario hasta los teléfonos móviles y agendas electrónicas utilizan bases de datos como un elemento fundamental en el desarrollo comercial; es decir, con los datos se pueden realizar ventas, compras o suministrar información de un lugar. 
+    p Las bases de datos son un sistema de información importante para las organizaciones, ya que provee el almacenamiento de registros organizados de manera digital; desde las grandes aplicaciones multiusuario hasta los teléfonos móviles y agendas electrónicas utilizan bases de datos como un elemento fundamental en el desarrollo comercial; es decir, con los datos se pueden realizar ventas, compras o suministrar información de un lugar.
 
     .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5
       .row.m-0.align-items-center.justify-content-between
@@ -80,8 +80,8 @@
             p Dos sentencias UPDATE que actualicen un mismo producto reduciendo el proceso del mismo a una unidad, podrían terminar en que una de ellas no finalice la operación. Si pensamos en un UPDATE como una sucesión de una lectura y una escritura, puede que ambos UPDATE hagan la lectura; por ejemplo, de una acción de 10 segundos y después las escrituras, decrementan ese dato, quedando el resultado en 9 segundos, mientras que lo correcto era un resultado de 8 segundos.
 
             p Si tenemos una sentencia que primero comprueba que hay una transacción del producto P, y después inserta un nuevo PEDIDO de diez unidades del producto P, que tiene un proceso de 10 segundos, seguido de un UPDATE al proceso por esa cantidad. Puede que otra inserción de un pedido se ejecute antes del UPDATE seguido de la comprobación, realizando quedar el proceso del producto en negativo.
-        
-        
+
+
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
       | Acceso concurrente a los datos
@@ -90,7 +90,7 @@
 
     TabsB.color-acento-contenido.mb-5(style="background-color: #ECF6FE !important")
       .tarjetacolor-acento-botones--borde.p-4(titulo="<em>Dirty Read</em> <b>(Lectura sucia)</b>")
-        p Se presenta cuando una segunda transacción lee datos que están siendo actualizados por una transacción antes de que haga 
+        p Se presenta cuando una segunda transacción lee datos que están siendo actualizados por una transacción antes de que haga
           em COMMIT
           | .
         .tabla-a.color-acento-contenido.mb-5.fblanco
@@ -101,32 +101,32 @@
                 th Transacción 2
             tbody
               tr
-                td 
-                  em UPDATE 
-                  | cuentas 
-                  em SET 
-                  | saldo = saldo - 300 
-                  em WHERE 
+                td
+                  em UPDATE
+                  | cuentas
+                  em SET
+                  | saldo = saldo - 300
+                  em WHERE
                   | id = 1;
-                td 
+                td
               tr
-                td 
-                td 
-                  em SELECT 
-                  | saldo 
-                  em FROM 
-                  | cuentas 
-                  em WHERE 
+                td
+                td
+                  em SELECT
+                  | saldo
+                  em FROM
+                  | cuentas
+                  em WHERE
                   | id = 1;
               tr
-                td 
-                  em SELECT 
-                  | saldo 
-                  em FROM 
-                  | cuentas 
-                  em WHERE 
+                td
+                  em SELECT
+                  | saldo
+                  em FROM
+                  | cuentas
+                  em WHERE
                   | id = 1;
-                td 
+                td
       .tarjetacolor-acento-botones--borde.p-4(titulo="<em>Non-Repeatable Read</em> <b>(Lectura No Repetible)</b>")
         p Se presenta cuando una transacción hace la consulta al mismo dato dos veces durante una ejecución de la transacción y la segunda vez encuentra que el valor del dato ha sido modificado por otra transacción.
         .tabla-a.color-acento-contenido.mb-5.fblanco
@@ -137,32 +137,32 @@
                 th Transacción 2
             tbody
               tr
-                td 
-                  em SELECT 
-                  | saldo 
-                  em FROM 
-                  | cuenta 
-                  em WHERE 
+                td
+                  em SELECT
+                  | saldo
+                  em FROM
+                  | cuenta
+                  em WHERE
                   | id = 1;
-                td 
+                td
               tr
-                td 
-                td 
-                  em UPDATE 
-                  | CUENTAS 
-                  em SET 
-                  | saldo = saldo - 200 
-                  em WHERE 
+                td
+                td
+                  em UPDATE
+                  | CUENTAS
+                  em SET
+                  | saldo = saldo - 200
+                  em WHERE
                   | id = 1;
               tr
-                td 
-                  em SELECT 
-                  | saldo 
-                  em FROM 
-                  | cuentas 
-                  em WHERE 
+                td
+                  em SELECT
+                  | saldo
+                  em FROM
+                  | cuentas
+                  em WHERE
                   | id = 1;
-                td 
+                td
       .tarjetacolor-acento-botones--borde.p-4(titulo="<em>Phantom Read</em> <b>(Lectura fantasma)</b>")
         p Se produce este error cuando una transacción registra dos veces una consulta, devuelve un conjunto de filas y en la segunda ejecución de la consulta registra nuevas filas en el conjunto que no existían cuando se inició la transacción.
         .tabla-a.color-acento-contenido.mb-5.fblanco
@@ -173,30 +173,30 @@
                 th Transacción 2
             tbody
               tr
-                td 
-                  em SELECT SUM 
-                  | (saldos) 
-                  em FROM 
+                td
+                  em SELECT SUM
+                  | (saldos)
+                  em FROM
                   | cuenta;
-                td 
+                td
               tr
-                td 
-                td 
-                  em INSERT INTO  
-                  | cuentas  
-                  em VALUES  
+                td
+                td
+                  em INSERT INTO
+                  | cuentas
+                  em VALUES
                   | (2, 9000);
               tr
-                td 
-                  em SELECT SUM 
-                  | (saldos) 
-                  em FROM 
+                td
+                  em SELECT SUM
+                  | (saldos)
+                  em FROM
                   | cuenta;
-                td 
+                td
 
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
-      | Técnicas para controlar las recurrencias, se encuentra varias técnicas para controlarlas
+      | Técnicas para controlar las recurrencias
 
     p Dentro de las técnicas más utilizadas, se encuentran los bloqueos, como también el control multiversión y las marcas de tiempo:
 
@@ -215,12 +215,12 @@
       .col-lg-6
         figure
           img.mb-4(src='@/assets/curso/temas/t1/f5.png', alt='')
-          p.text-small.tarjeta--gris.p-3 
-            b Nota: 
-            | el gráfico representa como debe aparecer el código en consola de 
-            em Mysl
-            | , nos muestra el bloque de escritura. Tomado de: 
-            a(href="https://programmerclick.com", target="_blank") https://programmerclick.com 
+          p.text-small.tarjeta--gris.p-3
+            b Nota:
+            | el gráfico representa como debe aparecer el código en consola de
+            em MySQL
+            | , nos muestra el bloque de escritura. Tomado de:
+            a(href="https://programmerclick.com", target="_blank") https://programmerclick.com
       .col-lg-6
         .fcab.p-4
           .contenedor-dashed.p-4
@@ -233,7 +233,7 @@
     #t_1_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.2 Seguridad de BD SQL y NOSQL
 
-    p Vamos a instalar un servidor de bases de datos 
+    p Vamos a instalar un servidor de bases de datos
       em MySQL
       | , para ello tener en cuenta lo siguiente:
 
@@ -246,29 +246,29 @@
           div(numero="1" titulo="Para conectar con bases de datos")
             ol.lista-ol
               li
-                p.mb-0 
-                  span.text-bold a. 
-                  | Descargar e instalar el 
-                  em appserv 
-                  | (Ojo como el usuario será root pueden colocar 
-                  em Password 
-                  | root1234): 
-                  a(href='https://sourceforge.net/projects/appserv/files/AppServ%20Open%20Project/8.5.0/appserv-win32-8.5.0.exe/download?use_mirror=gigenet&download=', target="_blank") descargar 
+                p.mb-0
+                  span.text-bold a.
+                  | Descargar e instalar el
+                  em appserv
+                  | (Ojo como el usuario será root pueden colocar
+                  em Password
+                  | root1234):
+                  a(href='https://sourceforge.net/projects/appserv/files/AppServ%20Open%20Project/8.5.0/appserv-win32-8.5.0.exe/download?use_mirror=gigenet&download=', target="_blank") descargar
                     em AppServ
               li
-                p.mb-0 
-                  span.text-bold b. 
-                  | Ver video de instalación: 
+                p.mb-0
+                  span.text-bold b.
+                  | Ver video de instalación:
                   a(href='https://www.youtube.com/watch?v=L2mMMevapSk', target='_blank') https://www.youtube.com/watch?v=L2mMMevapSk
           div(numero="2" titulo="Descargar e instalar <em>mysqlworkbench</em>")
             a(href="https://downloads.mysql.com/archives/workbench/", target="_blank") https://downloads.mysql.com/archives/workbench/
           div(numero="3" titulo="Ver video de instalación")
             a(href="https://www.youtube.com/watch?v=fBogDpofRiQ", target="_blank") https://www.youtube.com/watch?v=fBogDpofRiQ
           div(numero="4" titulo="Importante")
-            p Es posible que 
-              em Mysqlworkbench 
-              | le salga que no se puede instalar porque no tiene 
-              em Visual C++ 
+            p Es posible que
+              em Mysqlworkbench
+              | le salga que no se puede instalar porque no tiene
+              em Visual C++
               | entonces instalarlo.
             p
               a(href="https://www.youtube.com/watch?v=fBogDpofRiQ", target="_blank") https://www.youtube.com/watch?v=fBogDpofRiQ
@@ -299,12 +299,12 @@
       .col-lg-1.col-sm-2
         img(src='@/assets/curso/temas/t1/f8.svg', alt='icono de base de datos')
       .col-lg-11.col-sm-10
-        p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la 
+        p.mb-0 La seguridad es un elemento trascendental que tienen las organizaciones en sus bases de datos, de acuerdo a su disposición en una variedad de herramientas, controles y medidas trazadas para establecer y conservar la
           b confidencialidad
-          | , la 
-          b integridad 
-          | y la 
-          b disponibilidad 
+          | , la
+          b integridad
+          | y la
+          b disponibilidad
           | de los registros o datos. De estos tres conceptos que definen la seguridad de datos nos enfocaremos en la confidencialidad, ya que, es el elemento más importante y sensible, en gran parte, concerniente a la seguridad de datos.
 
     .bloque-texto-a.color-acento-botones.p-4.p-md-4.mb-5.bg-1
@@ -322,8 +322,8 @@
                   | Los datos de la base de datos.
                 li
                   i.fas.fa-check
-                  p.mb-0 El servidor de base de datos físico y/o el servidor de base de datos virtual y el 
-                    em hardware 
+                  p.mb-0 El servidor de base de datos físico y/o el servidor de base de datos virtual y el
+                    em hardware
                     | subyacente.
                 li
                   i.fas.fa-check
@@ -332,8 +332,8 @@
                   i.fas.fa-check
                   | La infraestructura informática y/o de red utilizada para acceder a la base de datos.
         .col-lg-4.mb-4.mb-lg-0
-    
-    p.mb-5 Para las organizaciones, la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina 
+
+    p.mb-5 Para las organizaciones, la seguridad de base de datos es un reto complejo y desafiante, que implica todos los aspectos de las tecnologías y buenas prácticas de seguridad de la información. Adicionalmente, está naturalmente en desacuerdo con la usabilidad de la base de datos, sin embargo, cuantos más permisos de acceso se puedan manipular entre los usuarios, más vulnerable será ante las amenazas de seguridad; cuanto más invulnerable sea la base de datos ante las amenazas, más difícil será el acceso y el uso. En ocasiones, esta paradoja se denomina
       b regla de Anderson.
 
     h3(data-aos="fade-right")
@@ -358,21 +358,21 @@
           div(titulo="Cifrado")
             p Es una parte muy importante de la seguridad de datos, deben estar cifrados los datos de la base de datos y los datos de credenciales, adicionalmente, se deberán proteger con el mejor cifrado mientras no estén operando o en tránsito.
           div(titulo="Seguridad de <em>software</em> de base de datos")
-            p Es importante utilizar la última versión del 
-              em software 
+            p Es importante utilizar la última versión del
+              em software
               | de gestión de bases de datos aplicando los parches cuando sean suministrados por el proveedor.
           div(titulo="Seguridad del servidor de aplicaciones/<em>web</em>")
             p Cualquier aplicación o servidor web que interactúen con la base de datos, están susceptibles a los ataques y deben estar supervisados de manera constante, para pruebas de seguridad, acompañadas de las mejores prácticas.
-            
+
           div(titulo="Seguridad de copia")
             p Para una buena gestión de la información, las copias de seguridad, copias o imágenes de la base de datos deben estar sujetas a los mismos controles de seguridad, estas deben estar registradas en una bitácora de registro donde indique fecha en la que se va a registrar la copia durante el año en curso.
           div(titulo="Auditoría")
             p Los formatos deben hacer parte del administrador de bases de datos, esto con el fin de registrar todos los inicios de sesión en el servidor de bases de datos y el sistema operativo también debe registrar las operaciones realizadas en datos confidenciales. Las auditorías estándar de seguridad de base de datos deben realizarse regularmente, anualmente o antes, si hay registros de fugas de información.
-          
+
     h3(data-aos="fade-right")
       i.fas.fa-square.cac.me-2
-      | Creación de usuarios en una base de datos SQL en servidor 
-      em AppServer com Mysql
+      | Creación de usuarios en una base de datos SQL en servidor
+      em AppServer con MySQL
       | .
 
     p A continuación, veamos el video el cual explicará con detalle, la creación de usuarios en una base de datos NoSQL en MongoDB:
@@ -389,33 +389,33 @@
           .col-auto
             .row.justify-content-between.align-items-center
               .col-auto.mb-3.mb-sm-0
-                h4.mb-1 Proceso de instalación de 
+                h4.mb-1 Proceso de instalación de
                   em MongoDB
-                p.text-small Descargue el siguiente documento, el cual explica el proceso de instalación de 
+                p.text-small Descargue el siguiente documento, el cual explica el proceso de instalación de
                   em MongoDB
                   | .
               .col.mb-3.mb-sm-0
                 a.boton.color-acento-botones(:href="obtenerLink('downloads/ProcesodeinstalaciondeMongoDB.pdf')" target="_blank" type="application/pdf")
-                  span(style='color:#12263F !important') Descargar 
+                  span(style='color:#12263F !important') Descargar
                   i.fas.fa-file-download(style='color:#12263F !important')
-    
+
     Separador
 
     #t_1_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.3 Permisos y roles de BD
 
-    p Permite la creación y modificación de roles y usuarios en la base de datos actual. Dado que el 
-      em userAdminrol 
+    p Permite la creación y modificación de roles y usuarios en la base de datos actual. Dado que el
+      em userAdminrol
       | concede a los usuarios cualquier privilegio a cualquier usuario, incluidos ellos mismos, el rol también entrega indirectamente permisos de superusuario a la base de datos o, si se limita a la admin base de datos, al clúster.
 
     .row.justify-content-center.mb-5
-      .col-lg-4 
-        figure 
+      .col-lg-4
+        figure
           img(src='@/assets/curso/temas/t1/f12.svg', alt='imagen relacionada')
       .col-lg-8
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris")
           div(titulo="<em>updateUser</em>")
-            p El usuario puede cambiar la informaci&oacute;n personalizada de cualquier usuario en la base de datos dada. Aplique esta acci&oacute;n a los recursos de la base de datos; 
+            p El usuario puede cambiar la informaci&oacute;n personalizada de cualquier usuario en la base de datos dada. Aplique esta acci&oacute;n a los recursos de la base de datos;
             code {
               br
               |  updateUser: &ldquo;&lt;Nombre del usuario&gt;&rdquo;,
@@ -457,15 +457,15 @@
               | }
 
           div(titulo="<em>changePassword</em>")
-            p El usuario puede cambiar la contraseña de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos ingresando el siguiente comando; ojo, recuerde que debemos estar en las bases de datos admin de mongodb para hacer este cambio; 
-              em db.changeUserPassword(“admin”, passwordPrompt()) 
-              | , cuando solicite el 
-              em password 
+            p El usuario puede cambiar la contraseña de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos ingresando el siguiente comando; ojo, recuerde que debemos estar en las bases de datos admin de MongoDB para hacer este cambio;
+              em db.changeUserPassword(“admin”, passwordPrompt())
+              | , cuando solicite el
+              em password
               | registrar el nuevo para hacer el cambio.
 
           div(titulo="<em>createRole</em>")
             p Crea un rol y especifica sus privilegios. El rol se aplica a la base de datos en la que ejecuta el comando. El createRole comando devuelve un error de rol duplicado si el rol ya existe en la base de datos.
-            p El createRolecomando utiliza la siguiente sintaxis:
+            p El createRole comando utiliza la siguiente sintaxis:
             code
               | db.adminCommand({ createRole: &ldquo;myClusterwideAdmin&rdquo;,
               br
@@ -543,7 +543,7 @@
               | &nbsp; writeConcern: { w: &ldquo;majority&rdquo;, wtimeout: 5000 }
               br
               | &nbsp; } )
- 
+
           div(titulo="<em>grantRole</em>")
             p El usuario puede otorgar cualquier rol en la base de datos a cualquier usuario de cualquier base de datos del sistema. Aplique esta acci&oacute;n a los recursos de la base de datos.
             code use admin
@@ -623,7 +623,7 @@
               | &nbsp; }
               br
               | )
- 
+
           div(titulo="<em>viewUser</em>")
             p El usuario puede ver la información de cualquier usuario en la base de datos dada. Aplique esta acción a los recursos de la base de datos indicamos el siguiente comando en la consola:
             ul.lista-ul--color
@@ -632,7 +632,7 @@
                 code db.getUsers({ filter: { mechanisms: “SCRAM-SHA-256” } })
               li
                 i.fas.fa-check
-                code db.getUsers() 
+                code db.getUsers()
 
 
 </template>

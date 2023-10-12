@@ -122,23 +122,23 @@ export default {
   },
   complementario: [
     {
-      tema: 'Lenguajes de manipulación y definición de datos',
+      tema: 'Creación de bases de datos en mysql, consola.',
       referencia:
         'Saklasr. (2019). MYSQL Consola – Crear bases de datos – Video 60 [video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=L2p3xOKUQW0',
     },
     {
-      tema: 'Lenguajes de manipulación y definición de datos',
+      tema: 'Creación de bases de datos MongoDb.',
       referencia:
         'Ávila, J. (2020). Cómo crear Bases de Datos en MongoDB Compass Creación de Colecciones, Documentos y Vistas [video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=8gbDA7kH5zg',
     },
     {
-      tema: 'Lenguajes de manipulación y definición de datos',
+      tema: 'Lenguaje estructurado de consultas SQL.',
       referencia:
-        'Pulido, E., Escobar, O. & Núñez, J.A. (2019). Base de datos. Grupo Editorial Patria.',
+        'Pulido, E., Escobar, O. & Núñez, J.A. (2019). <em>Base de datos</em>. Grupo Editorial Patria.',
       tipo: 'Libro',
       link:
         'https://elibro-net.bdigital.sena.edu.co/es/lc/senavirtual/titulos/121283',
@@ -177,7 +177,7 @@ export default {
         'conjunto unitario de instrucciones que permite a una computadora realizar funciones diversas, como el tratamiento de textos, el diseño de gráficos, la resolución de problemas matemáticos, el manejo de bancos de datos.',
     },
     { termino: 'Mongodb', significado: 'Gestor de Bases de Datos NoSQL.' },
-    { termino: 'MySQL', significado: 'Gestor de Bases de Datos SQL' },
+    { termino: 'MySQL', significado: 'Gestor de Bases de Datos SQL.' },
     {
       termino: 'NoSQL',
       significado:
